@@ -304,12 +304,12 @@ min-height: 606px;
     filter: blur(11px);
     &.big{
         top: 70px;
-        right: -679px;
+        right: -300px;
         
     }
     &.little{
         top: 336px;
-        right: -310px;
+        right: 0;
     }
 }
 
@@ -358,4 +358,39 @@ min-height: 606px;
     }
         
     
+}
+// 
+
+
+[data-aos="title"] {
+  transform: translate3d(0, -100px, 0);
+  
+  transition-property: transform;
+  &.aos-animate {
+    transform: translate3d(0, 0, 0);
+    
+  }
+}
+.story h2::before{
+    z-index: 0;
+}
+.title-h2{
+    padding: 108px;
+    width: 100%;
+}
+
+.fadeinBottom {
+    opacity:0;
+    max-width:100%;
+    position: absolute;
+    top: 7%;
+    left: 40%;
+}
+
+.fadeinBottom-2 {
+    opacity:0;
+    max-width:100%;
+    position: absolute;
+    top: 7%;
+    left: 45%;
 }
