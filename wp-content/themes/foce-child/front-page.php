@@ -12,8 +12,8 @@ get_header();
         </section>
         <section id="#story" class="story">
             <h2 class="title-h2"> 
-                <span class="fadeinBottom" >L'</span>
-                <span class="fadeinBottom-2">histoire</span>
+                <span class="fadeinBottomStory" >L'</span>
+                <span class="fadeinBottomStory-2">histoire</span>
             </h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
@@ -30,13 +30,19 @@ get_header();
             ?>
             <article id="characters">
                 <div class="main-character">
-                    <h3>Les personnages</h3>
+                    <h3 class="title-h3">
+                        <span class="fadeinBottomCharacters">Les</span>
+                        <span class="fadeinBottomCharacters-2">personnages</span>
+                    </h3>
                     <?php get_template_part( 'characters-section' ); ?>
                 </div>
             </article>
             <article id="place">
                 <div class="container">
-                    <h3>Le Lieu</h3>
+                    <h3 class="title-h3-place">
+                        <span class="fadeinBottomPlace">Le</span>
+                        <span class="fadeinBottomPlace-2">Lieu</span>
+                    </h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
                     <div  class="slider__inner--place">
                         <img  data-bottom-top="transform:translate3d(-270px, 0, 0)" data-top-bottom="transform:translate3d(300px, 0, 0)"  class="cloud big " src=" <?php echo get_stylesheet_directory_uri() . './images_koukaki/big_cloud.png'; ?>">
@@ -51,8 +57,8 @@ get_header();
 
         <section id="studio">
             <h2 class="title-h2">
-                <span class="fadeinBottom">Studio</span>
-                <span class="fadeinBottom-2">Koukaki</span>
+                <span class="fadeinBottomStudio">Studio</span>
+                <span class="fadeinBottomStudio-2">Koukaki</span>
             </h2>
             <div>
                 <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>

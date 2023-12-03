@@ -349,7 +349,17 @@ li > .link__nav:hover {
   width: 100%;
 }
 
-.fadeinBottom {
+.title-h3 {
+  padding: 90px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.title-h3-place {
+  padding: 150px 150px 0 150px;
+}
+
+.fadeinBottomStory {
   opacity: 0;
   max-width: 100%;
   position: absolute;
@@ -357,10 +367,58 @@ li > .link__nav:hover {
   left: 40%;
 }
 
-.fadeinBottom-2 {
+.fadeinBottomStory-2 {
   opacity: 0;
   max-width: 100%;
   position: absolute;
   top: 7%;
   left: 45%;
+}
+
+.fadeinBottomStudio {
+  opacity: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 32%;
+}
+
+.fadeinBottomStudio-2 {
+  opacity: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 48%;
+}
+
+.fadeinBottomCharacters {
+  opacity: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 44.1%;
+}
+
+.fadeinBottomCharacters-2 {
+  opacity: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 47.5%;
+}
+
+.fadeinBottomPlace {
+  opacity: 0;
+  max-width: 100%;
+  position: absolute;
+  bottom: 30%;
+  left: 15.5%;
+}
+
+.fadeinBottomPlace-2 {
+  opacity: 0;
+  max-width: 100%;
+  position: absolute;
+  bottom: 30%;
+  left: 25.5%;
 }/*# sourceMappingURL=style.css.map */

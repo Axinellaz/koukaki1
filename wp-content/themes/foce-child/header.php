@@ -5,11 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Plugin ScrollReveal -- Animation titres -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-        ScrollReveal({ reset: true });
-  </script>
+  <!-- Plugin CSS - Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
 
 	<?php wp_head(); ?>
 </head>

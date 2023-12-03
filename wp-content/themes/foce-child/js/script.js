@@ -43,6 +43,7 @@ var s = skrollr.init();
 
 var swiper = new Swiper(".mySwiper", {
       
+      loop: true,
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: "auto",
@@ -54,31 +55,100 @@ var swiper = new Swiper(".mySwiper", {
       },
     });
 
+
 // A  n i m a t i o n  :  T i t r e s 
-AOS.init({
-    duration: 2200
-});
 
-
+// H2 Story - section
 $(document).ready(function() {
     $(window).scroll( function(){
-        $('.fadeinBottom').each( function(i){
+        $('.fadeinBottomStory').each( function(i){
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','top':'2%'},2000);
+                $(this).animate({'opacity':'1','top':'3%'},2000);
             }
         });
     });
 
+
+
     $(window).scroll( function(){
-        $('.fadeinBottom-2').each( function(i){
+        $('.fadeinBottomStory-2').each( function(i){
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','top':'2%'},2500);
+                $(this).animate({'opacity':'1','top':'3%'},2500);
             }
         });
     });
 });
 
+// H2 Place - section 
+
+    $(window).scroll( function(){
+        $('.fadeinBottomStudio').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','top':'12%'},2600);
+            }
+        });
+    });
+
+   $(window).scroll( function(){
+        $('.fadeinBottomStudio-2').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','top':'12%'},3000);
+            }
+        });
+    });
+
+// H3 Personnages 
+
+
+
+     $(window).scroll( function(){
+        $('.fadeinBottomCharacters').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','top':'10%'},1500);
+            }
+        });
+    });
+
+     $(window).scroll( function(){
+        $('.fadeinBottomCharacters-2').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','top':'10%'},2000);
+            }
+        });
+    });
+    
+// H3  -  Place Section 
+
+$(window).scroll( function(){
+        $('.fadeinBottomPlace').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','bottom':'43%'},2000);
+            }
+        });
+    });
+
+    $(window).scroll( function(){
+        $('.fadeinBottomPlace-2').each( function(i){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1','bottom':'43%'},2500);
+            }
+        });
+    });
+    
+    

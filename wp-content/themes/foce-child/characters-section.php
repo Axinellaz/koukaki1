@@ -7,7 +7,7 @@
       <div class="swiper-slide">
         <img src="<?php echo get_stylesheet_directory_uri() . './img-personnages/Orenjiiro.png'; ?> " />
       </div>
-      <div class="swiper-slide">
+       <div class="swiper-slide">
         <img src="<?php echo get_stylesheet_directory_uri() . './img-personnages/Pinku.png'; ?> " />
       </div>
       <div class="swiper-slide">
