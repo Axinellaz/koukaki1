@@ -47,7 +47,7 @@
   transform: translate(0);
 }
 
-.container-menu {
+#navigation .container-menu {
   width: 100%;
   height: 90%;
   padding-top: 80px;
@@ -57,8 +57,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #FFF5E9;
+  background-color: #FFD5A2;
   overflow: hidden;
+}
+
+#navigation.active .container-menu {
+  background-color: #fff;
 }
 
 .container__nav-imgs > img {
@@ -95,8 +99,8 @@
   animation: rotate 13s linear infinite;
 }
 .container__nav-imgs .img__nav-Hibiscus {
-  bottom: 3%;
-  right: 0;
+  bottom: -9%;
+  right: -9%;
   height: 250px;
   width: 250px;
   animation: rotate 13s linear infinite;
@@ -149,7 +153,7 @@ li > .link__nav {
 }
 
 li > .link__nav:hover {
-  text-shadow: #ff9100 5px 5px 7px;
+  text-shadow: #ff9100 3px 3px 4px;
   color: #000;
 }
 
@@ -244,6 +248,14 @@ li > .link__nav:hover {
   animation: rotate 13s linear infinite;
 }
 
+#studio h2::before {
+  animation: rotate 13s linear infinite;
+}
+
+#studio h2::after {
+  animation: rotate 13s linear infinite;
+}
+
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
@@ -305,10 +317,12 @@ li > .link__nav:hover {
 }
 .site-footer::after {
   bottom: 47.8em;
+  animation: rotate 13s linear infinite;
 }
 .site-footer::before {
   left: 8rem;
   top: 8rem;
+  animation: rotate 13s linear infinite;
 }
 
 .container-section-nomination {
@@ -332,12 +346,8 @@ li > .link__nav:hover {
   padding: 50px;
 }
 
-[data-aos=title] {
-  transform: translate3d(0, -100px, 0);
-  transition-property: transform;
-}
-[data-aos=title].aos-animate {
-  transform: translate3d(0, 0, 0);
+.zindex-p-story {
+  z-index: 3;
 }
 
 .story h2::before {
@@ -365,14 +375,7 @@ li > .link__nav:hover {
   position: absolute;
   top: 7%;
   left: 40%;
-}
-
-.fadeinBottomStory-2 {
-  opacity: 0;
-  max-width: 100%;
-  position: absolute;
-  top: 7%;
-  left: 45%;
+  z-index: 0;
 }
 
 .fadeinBottomStudio {
@@ -396,15 +399,7 @@ li > .link__nav:hover {
   max-width: 100%;
   position: absolute;
   top: 15%;
-  left: 44.1%;
-}
-
-.fadeinBottomCharacters-2 {
-  opacity: 0;
-  max-width: 100%;
-  position: absolute;
-  top: 15%;
-  left: 47.5%;
+  left: 43%;
 }
 
 .fadeinBottomPlace {
@@ -412,13 +407,5 @@ li > .link__nav:hover {
   max-width: 100%;
   position: absolute;
   bottom: 30%;
-  left: 15.5%;
-}
-
-.fadeinBottomPlace-2 {
-  opacity: 0;
-  max-width: 100%;
-  position: absolute;
-  bottom: 30%;
-  left: 25.5%;
+  left: 13%;
 }/*# sourceMappingURL=style.css.map */

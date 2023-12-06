@@ -11,8 +11,6 @@
 </div><!-- #page -->
 <!-- Script pour parallaxe video banner -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-<!-- Script slider personnages -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- Script Jquery --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!-- Plugin CSS - Swiper -->

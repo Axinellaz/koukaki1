@@ -9,7 +9,7 @@ let observer = new IntersectionObserver((entries, observer) => {
 }); 
 
 
-//observer.observe(document.querySelector('.story'));
+observer.observe(document.querySelector('.story'));
 observer.observe(document.querySelector('#studio'));
 //observer.observe(document.querySelector('.banner img'));
 observer.observe(document.querySelector('#characters'));
@@ -59,7 +59,7 @@ var swiper = new Swiper(".mySwiper", {
 // A  n i m a t i o n  :  T i t r e s 
 
 // H2 Story - section
-$(document).ready(function() {
+
     $(window).scroll( function(){
         $('.fadeinBottomStory').each( function(i){
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
@@ -71,26 +71,14 @@ $(document).ready(function() {
     });
 
 
-
-    $(window).scroll( function(){
-        $('.fadeinBottomStory-2').each( function(i){
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','top':'3%'},2500);
-            }
-        });
-    });
-});
-
-// H2 Place - section 
+// H2 Studio - section 
 
     $(window).scroll( function(){
         $('.fadeinBottomStudio').each( function(i){
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','top':'12%'},2600);
+                $(this).animate({'opacity':'1','top':'12%'},2800);
             }
         });
     });
@@ -100,7 +88,7 @@ $(document).ready(function() {
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','top':'12%'},3000);
+                $(this).animate({'opacity':'1','top':'12%'},3500);
             }
         });
     });
@@ -118,16 +106,6 @@ $(document).ready(function() {
             }
         });
     });
-
-     $(window).scroll( function(){
-        $('.fadeinBottomCharacters-2').each( function(i){
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','top':'10%'},2000);
-            }
-        });
-    });
     
 // H3  -  Place Section 
 
@@ -136,19 +114,9 @@ $(window).scroll( function(){
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','bottom':'43%'},2000);
+                $(this).animate({'opacity':'1','bottom':'42%'},3500);
             }
         });
     });
 
-    $(window).scroll( function(){
-        $('.fadeinBottomPlace-2').each( function(i){
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','bottom':'43%'},2500);
-            }
-        });
-    });
-    
     
